@@ -1,0 +1,16 @@
+@import '../../styles/mixins.scss';
+
+.displayBox {
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    padding: 0px 20px;
+    @include flex(flex, row, nowrap, center, center);
+    margin-left: 10px;
+
+    @include breakpoint(sm) {
+        margin-bottom: 10px;
+    }
+
+}

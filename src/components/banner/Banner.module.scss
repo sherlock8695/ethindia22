@@ -1,0 +1,50 @@
+@import "../../styles/mixins.scss";
+
+.banner {
+
+    @include flex(flex, column, wrap, center, center);
+    background: linear-gradient(90deg, rgba(222,138,216,1) 50%, rgba(105,205,195,1) 100%);
+    height: 100vh;
+    width: 100%;
+
+    h1 {
+        color: #fff;
+    }
+
+    input {
+
+        color: #fff;
+        font-size: 22px;
+        border: none;
+        background-color: transparent;
+        border-bottom: solid 1px #fff;
+        text-align: right;
+
+        &::placeholder {
+            color: #fff;
+        }
+
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .inputContainer {
+        padding: 20px 0;
+        text-align: right;
+    }
+
+}
+
+.settings {
+    @include position($position: absolute, $top: 25px, $right: 0px);
+}

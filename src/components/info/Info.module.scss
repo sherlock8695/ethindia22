@@ -1,0 +1,37 @@
+@import "../../styles/mixins.scss";
+
+.section {
+
+    @include flex(flex, row, wrap, flex-start, center);
+    margin-bottom: 10px;
+
+    .refresh {
+        
+        @include background-image(reload-icon, svg, contain, center, no-repeat);
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+
+        &.active {
+            animation: spin infinite 1s linear;
+        }
+
+    }
+
+}
+
+.info {
+    color: #fff;
+    @include position($position: absolute, $bottom: 25px, $left: 0px);
+    font-size: 22px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

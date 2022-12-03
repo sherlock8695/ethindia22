@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'SuisseIntl-Regular';
+    src: url('#{$font-path}/SuisseIntl/SuisseIntl-Regular.woff2') format('woff2'),
+        url('#{$font-path}/SuisseIntl/SuisseIntl-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuisseIntl-SemiBold';
+    src: url('#{$font-path}/SuisseIntl/SuisseIntl-SemiBold.woff2') format('woff2'),
+        url('#{$font-path}/SuisseIntl/SuisseIntl-SemiBold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Bold';
+    src: url('#{$font-path}/SuisseIntl/SuisseIntl-Bold.woff2') format('woff2'),
+        url('#{$font-path}/SuisseIntl/SuisseIntl-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
